@@ -1,0 +1,247 @@
+/* FONTE IMPORTADA */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+/* CABEÇALHO */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 2em 10em;
+
+    background-color: black;
+}
+
+header img {
+    width: 10%;
+}
+
+header nav li {
+    display: inline;
+    list-style: none;
+
+    padding: 0 1em;
+}
+
+header a {
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+header a:hover {
+    color: blue;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2em auto;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+
+    text-transform: uppercase;
+}
+
+/* SOBRE MIM */
+
+main, footer {
+    width: 940px;
+    margin: auto;
+}
+
+.about-me {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-column-gap: 3em;
+}
+
+.about-me div:first-child {
+    border: 1px solid rgb(202, 92, 92);
+    border-radius: 30%;
+    padding: 3.5em 1em;
+}
+
+.about-me h3 {
+    text-align: center;
+    color: rgb(202, 92, 92);
+}
+
+.about-me ol {
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+/* .about-me ol li:first-child {
+    text-decoration: underline;
+} */
+
+/* .about-me ol li:nth-child(3) {
+    color: red;
+} */
+
+.about-me p:nth-of-type(5) {
+    padding: 2.5em 0 0;
+    font-weight: bold;
+}
+
+.about-me img {
+    width: 40%;
+    float: right;
+    margin-left: 1em;
+}
+
+.about-me img + p {
+    font-style: italic;
+}
+
+.about-me p {
+    text-align: justify;
+    line-height: 1.2em;
+    padding-bottom: 0.8em;
+}
+
+.about-me p a {
+    color: blue;
+}
+
+/* MEUS PROJETOS */
+
+.projects ul {
+    display: flex;
+    column-gap: 1em;
+}
+
+.projects li {
+    list-style: none;
+}
+
+.projects img {
+    width: 100%;
+
+    transition: 0.4s;
+}
+
+.projects img:hover {
+    transform: scale(1.1);
+}
+
+/* CONTATO */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form span {
+    display: inline-block;
+    text-align: center;
+
+    transition: 0.4s;
+}
+
+form span:hover {
+    transform: scale(1.1);
+    color: blue;
+}
+
+form label {
+    font-size: 1.3em;
+}
+
+form input {
+    width: 40%;
+    margin: 1.5em;
+    padding: 1em 4em;
+
+    border-radius: 50px;
+    border: none;
+
+    transition: 0.4s;
+}
+
+form input:focus {
+    transform: scale(1.1);
+}
+
+form button {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+
+    margin: 0.8em auto;
+    padding: 0.8em 4em;
+    border-radius: 30px;
+    /* background-color: #f8a50b; */
+    background-color: #4eeb39;
+    border: none;
+
+    transition: 0.4s;
+}
+
+form button:hover {
+    transform: scale(1.1);
+}
+
+/* RODAPÉ */
+
+footer {
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+footer span {
+    display: block;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    column-gap: 1.5em;
+    justify-content: center;
+}
+
+footer li {
+    list-style: none;
+    font-size: 1.8em;
+
+    margin-top: 1em;
+}
+
+footer a {
+    display: flex;
+    padding: 0.4em;
+    align-items: center;
+    border-radius: 50%;
+
+    transition: 0.4s;
+}
+
+footer a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
