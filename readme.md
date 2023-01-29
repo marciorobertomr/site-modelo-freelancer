@@ -21,3 +21,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 Projeto desenvolvido com o objetivo de revisar conhecimentos adquiridos, através da construção de um Site One Page, como modelo para profissional Freelancer.
+
+[Clique aqui para acessar](https://marciorobertomr.github.io/site-modelo-freelancer/)
