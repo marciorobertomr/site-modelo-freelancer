@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Site One Page - Modelo Freelancer</title>
         <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
     </head>
     <body>
         
@@ -95,15 +96,16 @@
             <section id="contact">
                 <h2>Contato</h2>
                 <div>
-                    <form action="https://formspree.io/f/mrgvekao" method="post">
+                    <form action="https://formspree.io/f/mrgvekao" method="post" id="form">
                         <label for="email">
                             <span>
                                 Deixe o seu e-mail que retornarei o contato!
                             </span>
                         </label>
                         <input type="email" id="email" name="email" placeholder="Seu e-mail aqui" required>
+                        <span id="validation"></span>
 
-                        <button>Enviar</button>
+                        <button id="send">Enviar</button>
                     </form>
                 </div>
             </section>

@@ -175,7 +175,7 @@ form label {
 
 form input {
     width: 40%;
-    margin: 1.5em;
+    margin: 1.5em 1.5em 0;
     padding: 1em 4em;
 
     border-radius: 50px;
@@ -186,6 +186,7 @@ form input {
 
 form input:focus {
     transform: scale(1.1);
+    margin-bottom: 0.5em;
 }
 
 form button {
@@ -193,7 +194,7 @@ form button {
     font-size: 1.1em;
     font-weight: bold;
 
-    margin: .5em auto;
+    margin: 1.5em auto .5em;
     padding: 1em 4em;
     border-radius: 30px;
     background-color: #4eeb39;
@@ -204,6 +205,11 @@ form button {
 
 form button:hover {
     transform: scale(1.1);
+}
+
+#validation {
+    color: red;
+    font-size: 0.8em;
 }
 
 /* RODAPÉ */
