@@ -15,41 +15,46 @@ body {
     background-color: aliceblue;
 }
 
+:root {
+    --cor-texto: rgb(99, 99, 230);
+    --cor-curiosidades: rgb(185, 119, 119)
+}
+
 /* CABEÇALHO */
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    padding: 2em 10em;
-
-    background-color: black;
+    padding: 1.5em 11em;
+    background-color: rgb(0, 0, 0);
 }
 
 header img {
-    width: 10%;
+    width: 8%;
 }
 
 header nav li {
     display: inline;
     list-style: none;
 
-    padding: 0 1em;
+    padding: 0 .5em;
 }
 
 header a {
     color: white;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 header a:hover {
-    color: blue;
+    color: var(--cor-texto);
 }
+
+/* CONTEÚDO PRINCIPAL */
 
 h1 {
     text-align: center;
@@ -59,8 +64,7 @@ h1 {
 
 h2 {
     text-align: center;
-    margin-top: 2em;
-    margin-bottom: 1.5em;
+    margin: 2em auto 1.5em;
 
     text-transform: uppercase;
 }
@@ -68,25 +72,30 @@ h2 {
 /* SOBRE MIM */
 
 main, footer {
-    width: 940px;
+    width: 70%;
     margin: auto;
 }
 
 .about-me {
     display: grid;
     grid-template-columns: 30% auto;
-    grid-column-gap: 3em;
+    grid-column-gap: 2em;
+}
+
+#about-me_curiositys {
+    height: 100%;
 }
 
 .about-me div:first-child {
-    border: 1px solid rgb(202, 92, 92);
+    border: 1px solid var(--cor-curiosidades);
     border-radius: 30%;
-    padding: 3.5em 1em;
+    padding: 1em;
+    align-content: center;
 }
 
 .about-me h3 {
     text-align: center;
-    color: rgb(202, 92, 92);
+    color: var(--cor-curiosidades);
 }
 
 .about-me ol {
@@ -96,23 +105,16 @@ main, footer {
     row-gap: 1em;
 }
 
-/* .about-me ol li:first-child {
-    text-decoration: underline;
-} */
-
-/* .about-me ol li:nth-child(3) {
-    color: red;
-} */
-
-.about-me p:nth-of-type(5) {
+.about-me p:nth-of-type(6) {
     padding: 2.5em 0 0;
     font-weight: bold;
 }
 
 .about-me img {
-    width: 40%;
+    width: 35%;
     float: right;
     margin-left: 1em;
+    border-radius: 50%;
 }
 
 .about-me img + p {
@@ -122,28 +124,32 @@ main, footer {
 .about-me p {
     text-align: justify;
     line-height: 1.2em;
-    padding-bottom: 0.8em;
+    padding-bottom: 1em;
 }
 
 .about-me p a {
-    color: blue;
+    color: var(--cor-texto);
 }
 
 /* MEUS PROJETOS */
 
 .projects ul {
     display: flex;
-    column-gap: 1em;
+    justify-content: space-between;
 }
 
 .projects li {
     list-style: none;
+    width: 32%;
 }
 
 .projects img {
     width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    border: 1px solid black;
 
-    transition: 0.4s;
+    transition: .3s;
 }
 
 .projects img:hover {
@@ -161,13 +167,6 @@ form {
 form span {
     display: inline-block;
     text-align: center;
-
-    transition: 0.4s;
-}
-
-form span:hover {
-    transform: scale(1.1);
-    color: blue;
 }
 
 form label {
@@ -194,14 +193,13 @@ form button {
     font-size: 1.1em;
     font-weight: bold;
 
-    margin: 0.8em auto;
-    padding: 0.8em 4em;
+    margin: .5em auto;
+    padding: 1em 4em;
     border-radius: 30px;
-    /* background-color: #f8a50b; */
     background-color: #4eeb39;
     border: none;
 
-    transition: 0.4s;
+    transition: .3s;
 }
 
 form button:hover {
@@ -239,7 +237,7 @@ footer a {
     align-items: center;
     border-radius: 50%;
 
-    transition: 0.4s;
+    transition: .3s;
 }
 
 footer a:hover {
